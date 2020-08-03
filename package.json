@@ -1,7 +1,7 @@
 {
   "name": "ini-config",
   "version": "1.0.0",
-  "description": "Load app config in config.ini file",
+  "description": "Load app config from config.ini file in root or specific path",
   "main": "./src/ini-config.js",
   "scripts": {
     "test": "mocha"
@@ -28,6 +28,7 @@
     "lodash": "^4.17.19"
   },
   "devDependencies": {
-    "mocha": "^8.1.0"
+    "mocha": "^8.1.0",
+    "nyc": "^15.1.0"
   }
 }
