@@ -18,8 +18,6 @@ const conf = (path, name = 'config') => {
 
     config = _.assignIn(config, ini.parse(fs.readFileSync(dir + '/' + name + ext, 'utf-8')));
 
-    return config;
-    
 }
 
 module.exports = conf;
