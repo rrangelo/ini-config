@@ -4,8 +4,8 @@
   "description": "Load app config from config.ini file in root or specific path",
   "main": "./src/ini-config.js",
   "scripts": {
-    "test": "nyc --reporter=text mocha",
-    "coverage": "nyc report --reporter=lcov"
+    "test": "nyc --reporter=text --reporter=lcov mocha",
+    "coverage": "nyc --reporter=lcov mocha"
   },
   "repository": {
     "type": "git",
