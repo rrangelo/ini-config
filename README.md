@@ -20,6 +20,8 @@ You must create your .ini file into your module path. Default:  `./config.ini`
 
 for default file just execute the `ini();` function in your main file.
 
+To get properties just call it that `var my_property = config.my_section.my_property;`.
+
 #### Customizing
 
 ##### By Name
