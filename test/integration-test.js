@@ -3,10 +3,11 @@ var assert = require('assert');
 let ini = require('../src/init-config');
 
 let mainConfig = JSON.parse('{"main":{"key":"root value"},"section":{"key":"root value"}}');
-let mainAndFoldedConfig = JSON.parse('{"main":{"key":"root value"},"section":{"key":"folder value"},"sub":{"key":"folder value"}}');
-let mainAndFoldedAndNamedConfig = JSON.parse('{"main":{"key":"root value"},"section":{"key":"folder value"},"sub":{"key":"folder value"},"another":{"config":"ini"}}');
+let mainAndNamedConfig = JSON.parse('{"main":{"key":"root value"},"section":{"key":"root value"},"other":{"config":"ini"}}');
+let mainAndNamedAndFoldedConfig = JSON.parse('{"main":{"key":"root value"},"section":{"key":"folder value"},"other":{"config":"ini"},"sub":{"key":"folder value"}}');
+let mainAndNamedAndFoldedAndNamedFoldedConfig = JSON.parse('{"main":{"key":"root value"},"section":{"key":"folder value"},"other":{"config":"ini"},"sub":{"key":"folder value"},"another":{"config":"ini"}}');
 
-describe('Success', function () {
+describe('Success Integration Tests', function () {
 
   after(function () {
     global.config = undefined;
@@ -19,17 +20,24 @@ describe('Success', function () {
     });
   });
 
-  describe('2 - #config(path)', function () {
+  describe('2 - #config({name})', function () {
     it('should be equals', function () {
-      ini('config');
-      assert.deepStrictEqual(config, mainAndFoldedConfig);
+      ini({name: 'other'});
+      assert.deepStrictEqual(config, mainAndNamedConfig);
     });
   });
 
-  describe('3 - #config(path, name)', function () {
+  describe('3 - #config({folder})', function () {
     it('should be equals', function () {
-      ini('config', 'another');
-      assert.deepStrictEqual(config, mainAndFoldedAndNamedConfig);
+      ini({folder: 'config'});
+      assert.deepStrictEqual(config, mainAndNamedAndFoldedConfig);
+    });
+  });
+
+  describe('4 - #config({folder, name})', function () {
+    it('should be equals', function () {
+      ini({folder: 'config', name: 'another'});
+      assert.deepStrictEqual(config, mainAndNamedAndFoldedAndNamedFoldedConfig);
     });
   });
 

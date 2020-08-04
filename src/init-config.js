@@ -7,13 +7,13 @@ let appRoot = require('app-root-path');
 
 global.config = {};
 
-const conf = (path, name = 'config') => {
+const conf = ({folder, name = 'config'} = {}) => {
 
     let dir = appRoot;
     let ext = '.ini';
     
-    if (path) {
-        dir += '/' + path;
+    if (folder) {
+        dir += '/' + folder;
     }
 
     config = _.assignIn(config, ini.parse(fs.readFileSync(dir + '/' + name + ext, 'utf-8')));
