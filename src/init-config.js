@@ -1,9 +1,8 @@
 'use stricts'
 const fs = require('fs');
 const ini = require('ini');
-const _ = require('lodash');
-
-let appRoot = require('app-root-path');
+const assignIn = require('lodash.assignin');
+const appRoot = require('app-root-path');
 
 global.config = {};
 
@@ -16,7 +15,7 @@ const conf = ({folder, name = 'config'} = {}) => {
         dir += '/' + folder;
     }
 
-    config = _.assignIn(config, ini.parse(fs.readFileSync(dir + '/' + name + ext, 'utf-8')));
+    config = assignIn(config, ini.parse(fs.readFileSync(dir + '/' + name + ext, 'utf-8')));
 
 }
 

@@ -38,4 +38,8 @@ Is a mix of both above, just call the function with both params `folder` and `na
 
 ## Code Coverage
 
-If you want to see the coverage, please go to: [https://sonarcloud.io/dashboard?id=rrangelo_ini-config](https://sonarcloud.io/dashboard?id=rrangelo_ini-config)
+If you want to see the coverage, please go to: 
+
+[https://sonarcloud.io/dashboard?id=rrangelo_ini-config](SonarCloud Project Coverage)
+
+(https://sonarcloud.io/dashboard?id=rrangelo_ini-config)[SonarCloud Project Coverage]

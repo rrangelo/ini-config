@@ -5,7 +5,7 @@
   "main": "./src/ini-config.js",
   "scripts": {
     "test": "nyc --reporter=text mocha",
-    "coverage": "nyc report --reporter=text-lcov"
+    "coverage": "nyc report --reporter=lcov"
   },
   "repository": {
     "type": "git",
@@ -34,7 +34,7 @@
   "dependencies": {
     "app-root-path": "^3.0.0",
     "ini": "^1.3.5",
-    "lodash": "^4.17.19"
+    "lodash.assignin": "^4.2.0"
   },
   "devDependencies": {
     "mocha": "^8.1.0",
