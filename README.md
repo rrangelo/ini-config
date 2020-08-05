@@ -38,7 +38,7 @@ You can create a .ini file in a diferent folder (always into your module path) l
 
 ##### By Folder
 
-Is a mix of both above, just call the function with `folder` param, like `ini({ folder: 'conf' });`.
+You can organize your ini files into folders, when you need add anyone to your context, just call the function with `folder` param, like `ini({ folder: 'conf' });`.
 
 ##### By Context
 
