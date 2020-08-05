@@ -3,16 +3,16 @@ let ini = require('../src/init-config');
 
 ini();
 
-console.log('main config:         ' + JSON.stringify(config));
+console.log('main config:         ' + JSON.stringify(iniconf));
 
-ini({name: 'other'});
+ini({name: 'other', ext: 'conf'});
 
-console.log('named config:        ' + JSON.stringify(config));
+console.log('named config:        ' + JSON.stringify(iniconf));
 
 ini({folder: 'config'});
 
-console.log('folded config:       ' + JSON.stringify(config));
+console.log('folded config:       ' + JSON.stringify(iniconf));
 
-ini({folder: 'config', name: 'another'});
+ini({folder: 'config', name: 'another', context: 'inictx'});
 
-console.log('folded named config: ' + JSON.stringify(config));
+console.log('folded named config: ' + JSON.stringify(inictx));
