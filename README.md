@@ -46,6 +46,12 @@ The context will be the global name variable used to get your configurations loa
 
 ## Code Coverage
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=rrangelo_ini-config&metric=alert_status)](https://sonarcloud.io/dashboard?id=rrangelo_ini-config)
+
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=rrangelo_ini-config&metric=coverage)](https://sonarcloud.io/dashboard?id=rrangelo_ini-config)
+
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=rrangelo_ini-config&metric=security_rating)](https://sonarcloud.io/dashboard?id=rrangelo_ini-config)
+
 If you want to see the coverage, please go to: 
 
 [SonarCloud Project Coverage](https://sonarcloud.io/dashboard?id=rrangelo_ini-config)
