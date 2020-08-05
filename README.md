@@ -8,13 +8,13 @@ Load app config from `.ini` (or your defined extension) file and put on global c
 
 ### Install
 
-`npm i -S ini-config`
+`npm i -S @rrangelo/ini-config`
 
 ### Use
 
 You must include the module just once time in your main file.
 
-`let ini = require('ini-config');`
+`let ini = require('@rrangelo/ini-config');`
 
 You must create your .ini file into your module path. Default:  `./config.ini`
 
