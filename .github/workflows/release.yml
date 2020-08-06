@@ -10,12 +10,17 @@ jobs:
     steps:
       - name: Getting sources
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Setting up Node 12.x
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
       - name: Setting up SonarCloud
         uses: sonarsource/sonarcloud-github-action@master
+        with:
+          projectBaseDir: .
+          sources: ./src
       - name: Building package
         run: npm ci
       - name: Testing package  
