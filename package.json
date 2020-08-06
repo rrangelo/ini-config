@@ -1,8 +1,8 @@
 {
   "name": "@rrangelo/ini-config",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Load app config from config.ini file in root or specific path",
-  "main": "./src/ini-config.js",
+  "main": "src/ini-config.js",
   "scripts": {
     "test": "nyc --reporter=text --reporter=lcov mocha"
   },
@@ -14,7 +14,11 @@
     "node",
     "npm",
     "ini",
-    "config"
+    "config",
+    "configuration"
+  ],
+  "files": [
+    "src/ini-config.js"
   ],
   "directories": {
     "example": "example",

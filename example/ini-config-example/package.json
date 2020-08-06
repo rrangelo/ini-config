@@ -1,0 +1,18 @@
+{
+  "name": "ini-config-example",
+  "version": "1.0.0",
+  "description": "Example project of ini-config",
+  "main": "ini-config-example.js",
+  "scripts": {
+    "start": "node ini-config-example.js"
+  },
+  "author": {
+    "name": "Ramon Rangel Osorio",
+    "email": "ramon.rangel@protonmail.com",
+    "url": "https://ve.linkedin.com/in/rrangelo"
+  },
+  "license": "MPL-2.0",
+  "dependencies": {
+    "@rrangelo/ini-config": "^1.0.3"
+  }
+}
