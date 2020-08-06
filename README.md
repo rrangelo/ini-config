@@ -34,7 +34,7 @@ If file doesn't exists you'll get the error `File not found`, you must be sure y
 
 You can use an external file setting doing that:
 
-NOTE: The extension can be customize.
+*NOTE: The extension can be customize.*
 
 ##### On Windows Shell
 
