@@ -21,7 +21,3 @@ jobs:
         run: npm install
       - name: Testing package  
         run: npm test
-      - name: Setting up SonarCloud
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
