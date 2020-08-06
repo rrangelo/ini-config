@@ -13,6 +13,6 @@
   },
   "license": "MPL-2.0",
   "dependencies": {
-    "@rrangelo/ini-config": "^1.0.3"
+    "@rrangelo/ini-config": "^1.0.15"
   }
 }

@@ -1,5 +1,5 @@
 'use strict'
-let ini = require('../src/init-config');
+let ini = require('../index');
 
 ini();
 

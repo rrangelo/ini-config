@@ -1,6 +1,6 @@
 const _ = require('lodash');
 var assert = require('assert');
-let ini = require('../src/init-config');
+let ini = require('../index');
 
 let mainConfig = JSON.parse('{"section":{"key":"value","subsection":{"key":"value"}},"other_section":{"key":"value"}}');
 let mainAndNamedConfig = JSON.parse('{"section":{"key":"value","subsection":{"key":"value"}},"other_section":{"key":"value"},"other":{"config":"conf"}}');

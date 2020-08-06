@@ -1,0 +1,14 @@
+.github
+node_modules
+.nyc_output
+coverage
+example
+config
+test
+.gitignore
+config.ini
+other.conf
+package-lock.json
+sonar-project.properties
+.npmignore
+.git
