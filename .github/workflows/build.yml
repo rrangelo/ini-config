@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 12.x
       - name: Building package
-        run: npm ci
+        run: npm install
       - name: Testing package  
         run: npm test
       - name: Setting up SonarCloud
