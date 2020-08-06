@@ -1,5 +1,7 @@
 # ini-config
 
+npm package [@rrangelo/ini-config](https://www.npmjs.com/package/@rrangelo/ini-config)
+
 ## Description
 
 Load app config from `.ini` (or your defined extension) file and put on global context.
