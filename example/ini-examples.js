@@ -16,3 +16,7 @@ console.log('folded config:       ' + JSON.stringify(iniconf));
 ini({folder: 'config', name: 'another', context: 'inictx'});
 
 console.log('folded named config: ' + JSON.stringify(inictx));
+
+if (process.env.EXT_INI_CONF) {
+    process.env.EXT_INI_CONF = undefined;
+}

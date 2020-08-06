@@ -24,7 +24,23 @@ To get your configurationns, in default context, just call it that `var my_confi
 
 The context will be the global name used to get your configurations loaded. 
 
-#### Adding
+#### Error
+
+If file doesn't exists you'll get the error `File not found`, you must be sure you get the correct configuration file path.
+
+#### External File
+
+You can use an external file setting doing that:
+
+NOTE: The extension can be customize.
+
+##### On Windows Shell
+
+`SET EXT_INI_CONF=C:\absolut\path\to\file.ini`
+
+##### On Unix Shell
+
+`export EXT_INI_CONF=/absolut/path/to/file.ini`
 
 #### Customizing
 

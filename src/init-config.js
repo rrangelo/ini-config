@@ -6,14 +6,36 @@ const appRoot = require('app-root-path');
 
 const conf = ({folder, name = 'config', ext = 'ini', context = 'iniconf'} = {}) => {
 
-    let dir = appRoot;
-    
+    let path = appRoot.path;
+    let extPath = process.env.EXT_INI_CONF || undefined;
+
     if (folder) {
-        dir += '/' + folder;
+        path += '/' + folder;
     }
 
-    global[context] = assignIn(global[context], ini.parse(fs.readFileSync(dir + '/' + name + '.' + ext, 'utf-8')));
+    path += '/' + name + '.' + ext;
 
+    try {
+        load(path, context);
+    } catch (error) {
+        if (!extPath) {
+            throw error;
+        }
+    } finally {
+        if (extPath) {
+            path = extPath.trim();
+            load(path, context);
+        }
+    }
+    
+}
+
+function load(path, context) {
+    if (fs.existsSync(path)) {
+        global[context] = assignIn(global[context], ini.parse(fs.readFileSync(path, 'utf-8')));
+    } else {
+        throw 'File not found';
+    }
 }
 
 module.exports = conf;
