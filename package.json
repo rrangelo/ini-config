@@ -1,6 +1,6 @@
 {
   "name": "@rrangelo/ini-config",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Load app config from config.ini file in root or specific path",
   "main": "index.js",
   "scripts": {

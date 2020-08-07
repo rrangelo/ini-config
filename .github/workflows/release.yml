@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 12.x
       - name: Building package
-        run: npm ci
+        run: npm i
       - name: Testing package  
         run: npm test
 
@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: 12.x
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
+      - run: npm i
       - run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
@@ -44,7 +44,5 @@ jobs:
         with:
           node-version: 12.x
           registry-url: https://npm.pkg.github.com/
-      - run: npm ci
-      - run: npm publish --access=public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - run: npm i
+      - run: npm pack
