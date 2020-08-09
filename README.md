@@ -48,15 +48,15 @@ _NOTE: The extension can be customize._
 
 ##### By Name
 
-You can create a .ini file with a custom name like `my.ini`. So, to load your file on context, just call the function with `name` param, like `ini({ name: 'my' });`. 
+You can create a `.ini` file with a custom name like `my.ini`. So, to load your file on context, just call the function with `name` param, like `ini({ name: 'my' });`. 
 
 ##### By Folder
 
 You can create a .ini file in a diferent folder (always into your module path) like `./conf/config.ini`, to access to your .ini file just call the function with `folder` param, like `ini({ folder: 'conf' });`.
 
-##### By Folder
+##### By Extension
 
-You can organize your ini files into folders, when you need add anyone to your context, just call the function with `folder` param, like `ini({ folder: 'conf' });`.
+You can choice a different extension for your `.ini` file, like `.cfg`. So, you just need call the function with `ext` param, like `ini({ ext: 'cfg' });`.
 
 ##### By Context
 
