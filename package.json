@@ -21,11 +21,7 @@
     "example": "example",
     "test": "test"
   },
-  "author": {
-    "name": "Ramon Rangel Osorio",
-    "email": "ramon.rangel@protonmail.com",
-    "url": "https://ve.linkedin.com/in/rrangelo"
-  },
+  "author": "Ramon Rangel Osorio <ramon.rangel@protonmail.com> (https://ve.linkedin.com/in/rrangelo)",
   "license": "MPL-2.0",
   "bugs": {
     "url": "https://github.com/rrangelo/ini-config/issues"
